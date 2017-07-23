@@ -12,9 +12,12 @@ time = 0
 money = 0
 print(home)
 
-user_input = input(choice1)
+user_input = input(choice1).lower()
 
-if user_input == "walk":
+while user_input != "walk" or "drive":
+ user_input = input(choice1).lower()
+
+ if user_input == "walk":
     user_input = input(choice2)
 
     if user_input == "bus":
@@ -46,7 +49,7 @@ if user_input == "walk":
     else:
         print("bus or lirr")
 
-elif user_input == "drive":
+ elif user_input == "drive":
     time = time + 10
     user_input = input(choice4)
 
@@ -80,3 +83,4 @@ elif user_input == "drive":
 
 else:
     print("walk or drive")
+       
