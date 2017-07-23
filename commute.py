@@ -12,7 +12,7 @@ time = 0
 money = 0
 print(home)
 
-user_input = input(choice1).lower()
+user_input = None
 
 while user_input != "walk" or "drive":
  user_input = input(choice1).lower()
